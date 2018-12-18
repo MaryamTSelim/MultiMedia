@@ -15,7 +15,7 @@
 
 header {
     position: sticky;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border-bottom: 5px solid #FFA883;
     box-shadow: 0px 0px 10px dimgray;
@@ -24,21 +24,28 @@ header {
 header h1 {
     color: #3EB7B2;
     display: inline;
+    font-size: 45px;
+    text-transform: uppercase;
 }
 
 header p {
     color: #3EB7B2;
+    font-size: 20px;
+    padding: 10px
 }
 
 section {
     padding: 20px;
+    padding-bottom: 100px;
     background-color: rgba(211, 211, 211, 0.5);
 }
 
 article h2 {
     color: #1CA68F;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
 
 }
 
@@ -47,12 +54,13 @@ article p {
     margin-right: 10px;
     width: 50%;
     float: left;
+    font-size: 20px;
 }
 
 article video,
 article img {
     float: left;
-    border-radius: 30px;
+    border-radius: 40px;
     border: 3px solid #1CA68F;
 }
 
@@ -61,8 +69,6 @@ footer {
     display: block;
     float: left;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
 
 footer div {
@@ -71,11 +77,13 @@ footer div {
 }
 
 footer h4 {
-    color: white
+    color: white;
+    font-size: 24px;
 }
 
 footer h5 {
-    color: #1CA68F
+    color: #1CA68F;
+    font-size: 22px;
 }
 
 footer ul {
@@ -85,6 +93,6 @@ footer ul {
 
 footer p {
     width: 70%;
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px;
 }
