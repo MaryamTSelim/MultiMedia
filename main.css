@@ -3,14 +3,62 @@
     src: url(JosefinSans-Regular.ttf);
 }
 
+@keyframes bordercoloring {
+    0% {
+        border-color: crimson;
+    }
+
+    15% {
+        border-color: orangered;
+    }
+
+    30% {
+        border-color: gold;
+    }
+
+    45% {
+        border-color: yellowgreen;
+    }
+
+    50% {
+        border-color: seagreen;
+    }
+
+    65% {
+        border-color: midnightblue;
+    }
+
+    70% {
+        border-color: rebeccapurple;
+    }
+
+    85% {
+        border-color: palevioletred
+    }
+
+    100% {
+        border-color: crimson;
+    }
+
+}
+
 * {
     margin: 0%;
     padding: 0%;
     font-family: JosefinSans;
 }
 
+body {
+    background-color: lightgray;
+}
+
 .clear {
     clear: both;
+}
+
+.currentLink {
+    color: #1CA68F;
+    background-color: white;
 }
 
 header {
@@ -35,9 +83,38 @@ header p {
 }
 
 section {
-    padding: 20px;
     padding-bottom: 100px;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: white;
+    margin: 60px;
+    border: 7px solid;
+    animation-name: bordercoloring;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+nav {
+    height: auto;
+
+}
+
+nav a {
+    padding: 15px;
+    font-size: 36px;
+    background-clip: padding-box;
+    background-color: #1CA68F;
+    color: white;
+    float: left;
+    display: block;
+    width: 33.333%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+article {
+    margin: 20px;
+    clear: both;
 }
 
 article h2 {
@@ -46,7 +123,6 @@ article h2 {
     margin-top: 50px;
     font-size: 30px;
     text-transform: uppercase;
-
 }
 
 article p {
@@ -62,6 +138,17 @@ article img {
     float: left;
     border-radius: 40px;
     border: 3px solid #1CA68F;
+}
+
+
+article button {
+    color: white;
+    background-color: #1CA68F;
+    border: 5px solid #3EB7B2;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: border 1s, background-color 1s;
 }
 
 footer {
@@ -95,4 +182,14 @@ footer p {
     width: 70%;
     font-size: 18px;
     padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 5px solid rgb(255, 190, 162);
+    background-color: #FFA883
+}
+
+nav a:hover {
+    background-color: #3EB7B2;
 }
